@@ -65,19 +65,19 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 Simple UI with:
 
-**URL input**
+**•URL input**
 
-**Scrape button**
+**•Scrape button**
 
-**Loading states**
+**•Loading states**
 
-**Error messages**
+**•Error messages**
 
-**JSON output viewer**
+**•JSON output viewer**
 
-**Direct backend requests (http://localhost:8000/scrape)**
+**•Direct backend requests (http://localhost:8000/scrape)**
 
-**Auto-scroll to output after scrape completes**
+**•Auto-scroll to output after scrape completes**
 
 ### From the frontend/lyftr-frontend directory:
 ```bash
