@@ -28,11 +28,7 @@ This project satisfies all requirements for the Lyftr AI Full-Stack Assignment.
 
 **Click flows:**
 
-[role="tab"]
-
-button[aria-controls]
-
-“Load more”, “Show more”, “More” buttons
+[role="tab"] button[aria-controls] “Load more”, “Show more”, “More” buttons
 
 **Infinite scroll (multiple scroll passes + DOM length detection)**
 
@@ -40,7 +36,7 @@ Pagination (depth ≥ 3)
 
 Noise removal (cookie banners, overlays)
 
-  Section-aware HTML parsing:
+**Section-aware HTML parsing:**
 
 Landmarks (main, section, article, header)
 
@@ -55,9 +51,8 @@ Truncation of raw HTML with truncated=true
 **Metrics: interactions (clicks, scroll count, pages visited)**
 
 ### From the backend/ directory:
-
+```bash
 chmod +x run.sh
-
 ./run.sh
 
 # Frontend (React)
@@ -79,7 +74,6 @@ Simple UI with:
 **Auto-scroll to output after scrape completes**
 
 ### From the frontend/lyftr-frontend directory:
-
+```bash
 npm install
-
 npm run dev
