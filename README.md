@@ -2,41 +2,41 @@
 
 This full-stack project implements a browser-like web scraper with:
 
-**Static scraping (httpx + BeautifulSoup)**
+**• Static scraping (httpx + BeautifulSoup)**
 
-**JavaScript-rendered scraping via Playwright**
+**• JavaScript-rendered scraping via Playwright**
 
-**Click flows (tabs, “Load more”, accordions)**
+**• Click flows (tabs, “Load more”, accordions)**
 
-**Infinite scrolling**
+**• Infinite scrolling**
 
-**Pagination depth ≥ 3**
+**• Pagination depth ≥ 3**
 
-**Section-aware structured JSON output**
+**• Section-aware structured JSON output**
 
-**Clean React frontend for triggering scrapes + viewing results**
+**• Clean React frontend for triggering scrapes + viewing results**
 
 This project satisfies all requirements for the Lyftr AI Full-Stack Assignment.
 
 # Backend (FastAPI)
 
-**Static scraping (httpx + retries + custom headers)**
+**• Static scraping (httpx + retries + custom headers)**
 
-**JS rendering using Playwright (Chromium)**
+**• JS rendering using Playwright (Chromium)**
 
-**Automatic fallback from static → JS when content is insufficient**
+**• Automatic fallback from static → JS when content is insufficient**
 
-**Click flows:**
+**• Click flows:**
 
 [role="tab"] button[aria-controls] “Load more”, “Show more”, “More” buttons
 
-**Infinite scroll (multiple scroll passes + DOM length detection)**
+**• Infinite scroll (multiple scroll passes + DOM length detection)**
 
 Pagination (depth ≥ 3)
 
 Noise removal (cookie banners, overlays)
 
-**Section-aware HTML parsing:**
+**• Section-aware HTML parsing:**
 
 Landmarks (main, section, article, header)
 
@@ -48,7 +48,7 @@ Hacker News fallback parser
 
 Truncation of raw HTML with truncated=true
 
-**Metrics: interactions (clicks, scroll count, pages visited)**
+**• Metrics: interactions (clicks, scroll count, pages visited)**
 
 ### From the backend/ directory:
 ```bash
@@ -65,19 +65,19 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 Simple UI with:
 
-**•URL input**
+**• URL input**
 
-**•Scrape button**
+**• Scrape button**
 
-**•Loading states**
+**• Loading states**
 
-**•Error messages**
+**• Error messages**
 
-**•JSON output viewer**
+**• JSON output viewer**
 
-**•Direct backend requests (http://localhost:8000/scrape)**
+**• Direct backend requests (http://localhost:8000/scrape)**
 
-**•Auto-scroll to output after scrape completes**
+**• Auto-scroll to output after scrape completes**
 
 ### From the frontend/lyftr-frontend directory:
 ```bash
