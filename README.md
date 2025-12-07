@@ -54,6 +54,12 @@ Truncation of raw HTML with truncated=true
 ```bash
 chmod +x run.sh
 ./run.sh
+``` 
+
+or run manually:
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+``` 
 
 # Frontend (React)
 
@@ -77,3 +83,4 @@ Simple UI with:
 ```bash
 npm install
 npm run dev
+```

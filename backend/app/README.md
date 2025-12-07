@@ -23,10 +23,16 @@ Implements static scraping (httpx + BeautifulSoup), Playwright JS rendering fall
 
 ## Quick start 
 Run from the `backend/` folder:
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+
 ```bash
 chmod +x run.sh     
 ./run.sh
+``` 
+
+or run manually:
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+``` 
 
 ## Tested Websites & Supported Behaviors
 
